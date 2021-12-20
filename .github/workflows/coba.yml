@@ -12,9 +12,9 @@ jobs:
     - name: Download ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/mulai.bat?token=ATAKYSFE6FPODFNRTDVFMH3BYDQXM -OutFile mulai.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/up.bat?token=ATAKYSFJDDOLRQRKWLD6ZVTBYDQYO -OutFile up.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/looping.bat?token=ATAKYSAJZZHLN4TJDNRDT53BYDRLI -OutFile looping.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/mulai.bat -OutFile mulai.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/up.bat -OutFile up.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mdkawsar-rachel/shiny-octo-chainsaw/main/looping.bat -OutFile looping.bat
     - name: Mengextrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Connect ke ngrok.
